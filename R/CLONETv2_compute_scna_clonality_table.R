@@ -371,8 +371,7 @@ compute_scna_clonality_table<-function(beta_table,
 	beta_table$log2shift <- round(-log2(beta_table$ploidy/2),n_digits)
 	beta_table$log2.plCorr <- round(beta_table$log2 - beta_table$log2shift, n_digits)
 	beta_table <- merge(x = beta_table, y = admixture_table, by="sample")
-  ## note: consider setting to 0 when log2.corr is NA
-	beta_table$log2.corr <-  suppressWarnings(log2( ( 2 ^ (beta_table$log2.plCorr ) - admixture_table$adm[1] ) / (1 - admixture_table$adm[1])))
+	beta_table$log2.corr <-  suppressWarnings(log2(pmax(( 2 ^ (beta_table$log2.plCorr ) - admixture_table$adm[1] ) / (1 - admixture_table$adm[1]), 0)))
 
 	## compute clonality
 	clonality_table <- compute_clonality(betaTable = beta_table,
