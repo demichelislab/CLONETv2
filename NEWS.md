@@ -1,3 +1,7 @@
+# CLONETv2 Version: 2.2.1
+
+* Set lower bound for corrected CN ratio (this solves issues for homozygous calls in noisy samples).
+
 # CLONETv2 Version: 2.2.0
 
 * better support for WGS data. Functions `compute_ploidy` and `compute_dna_admixture` have paramter `library_type` to specify if sequencing data
