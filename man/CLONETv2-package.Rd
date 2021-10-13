@@ -46,8 +46,20 @@ Mosquera, J. M., Robinson, B., Elemento, O., et al. (2016). Clonal evolution of
 chemotherapyresistant
 urothelial carcinoma. Nature genetics 48, 1490-1499.
 }
-\keyword{
-Purity, Ploidy, Clonality, Cancer Genomics, Allele specific Analysis
+\concept{
+Purity
+}
+\concept{
+Ploidy
+}
+\concept{
+Clonality
+}
+\concept{
+Cancer Genomics
+}
+\concept{
+Allele specific Analysis
 }
 \examples{
 \donttest{
