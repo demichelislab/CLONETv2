@@ -12,7 +12,6 @@ Maintainer: Yari Ciani <yari.ciani@unitn.it>
 Description: Analyze data from next-generation sequencing experiments on genomic samples. 'CLONETv2' offers a set of functions to compute allele specific copy number and clonality from segmented data and SNPs position pileup. The package has also calculated the clonality of single nucleotide variants given read counts at mutated positions. The package has been developed at the laboratory of Computational and Functional Oncology, Department of CIBIO, University of Trento (Italy), under the supervision of prof Francesca Demichelis. References: Prandi et al. (2014) <doi:10.1186/s13059-014-0439-6>; Carreira et al. (2014) <doi:10.1126/scitranslmed.3009448>; Romanel et al. (2015) <doi:10.1126/scitranslmed.aac9511>.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Depends:
